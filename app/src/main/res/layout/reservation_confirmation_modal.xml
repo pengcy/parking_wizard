@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_confirmation" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_header"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Great"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Your reservation has been confirmed!"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/search_control_search_button"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/tv_msg"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:text="Check" />
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_check"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Close"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"/>
+</RelativeLayout>

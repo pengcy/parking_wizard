@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Parking Wizard</string>
+    <string name="title_activity_maps">Parking App</string>
+
+
+    <string name="app_main_header">Parking App</string>
+    <string name="app_reservation_screen_header">Parking Spot Info</string>
+
+
+
+    <string name="app_search_control_hint_location">Enter a zip code in San Francisco</string>
+    <string name="app_search_control_current_location">Current Location</string>
+    <string name="app_search_control_hint_date">Date</string>
+    <string name="app_search_control_hint_time">Time</string>
+    <string name="app_search_control_reserve_label">Reserver for: </string>
+    <string name="app_search_control_reserve_time">%1$d mins</string>
+    <string name="app_search_control_reserve_max_time">120 mins</string>
+    <string name="app_search_control_search_button_text">Search</string>
+
+
+
+    <string name="app_control_panel_search">Search</string>
+    <string name="app_control_panel_find">Find</string>
+    <string name="app_control_panel_reservation">Reservation</string>
+    <string name="app_control_panel_my_car">My Car</string>
+
+
+
+</resources>

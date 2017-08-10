@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="app_header_height">60dp</dimen>
+    <dimen name="app_header_text_size">26sp</dimen>
+
+    <dimen name="app_search_control_main_container_height">250dp</dimen>
+    <dimen name="app_search_control_input_height">40dp</dimen>
+    <dimen name="app_search_control_padding_left_right">10dp</dimen>
+    <dimen name="app_search_control_padding_top">20dp</dimen>
+    <dimen name="app_search_control_padding_bottom">30dp</dimen>
+    <dimen name="app_search_control_inner_search_button_height">30dp</dimen>
+    <dimen name="app_search_control_search_button_size">40dp</dimen>
+    <dimen name="app_search_control_search_button_marginTop">-20dp</dimen>
+    <dimen name="app_search_control_search_button_marginBottom">5dp</dimen>
+
+
+    <dimen name="app_control_panel_text_size">16sp</dimen>
+    <dimen name="app_control_panel_height">70dp</dimen>
+
+</resources>

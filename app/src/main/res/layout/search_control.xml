@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/app_search_control_main_container_height"
+    android:background="#00ffffff"
+    android:id="@+id/rl_search_control_main_container">
+
+    <LinearLayout
+        android:id="@+id/ll_search_control_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:elevation="10dp"
+            android:background="@color/white"
+            android:paddingTop="@dimen/app_search_control_padding_top"
+            android:paddingLeft="@dimen/app_search_control_padding_left_right"
+            android:paddingRight="@dimen/app_search_control_padding_left_right"
+            android:paddingBottom="@dimen/app_search_control_padding_bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_search_control_input_height"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_location_on_black_18dp"/>
+                <AutoCompleteTextView
+                    android:id="@+id/actv_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:hint="@string/app_search_control_hint_location"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_search_control_input_height"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/app_search_control_input_height"
+                    android:layout_weight="5"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_date_range_black_18dp"/>
+                    <EditText
+                        android:id="@+id/et_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="@string/app_search_control_hint_date"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/app_search_control_input_height"
+                    android:layout_weight="5"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_access_time_black_18dp"/>
+                    <EditText
+                        android:id="@+id/et_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="@string/app_search_control_hint_time"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+                <TextView
+                    android:id="@+id/tv_reserve_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/app_search_control_reserve_label"/>
+                <TextView
+                    android:id="@+id/tv_reserve_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/tv_reserve_label"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/red"
+                    android:text="@string/app_search_control_reserve_time"/>
+                <TextView
+                    android:id="@+id/tv_reserve_max_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/app_search_control_reserve_max_time"/>
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/sb_reserve_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="@integer/max_reservation_time"
+                android:progress="@integer/default_reservation_time"/>
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/app_search_control_inner_search_button_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/search_control_search_button"
+                android:textColor="@color/white"
+                android:text="@string/app_search_control_search_button_text"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_search_control_button"
+        android:layout_width="@dimen/app_search_control_search_button_size"
+        android:layout_height="@dimen/app_search_control_search_button_size"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:layout_marginTop="@dimen/app_search_control_search_button_marginTop"
+        android:layout_marginBottom="@dimen/app_search_control_search_button_marginBottom"
+        android:layout_below="@+id/ll_search_control_container"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/search_control_button">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_search_black_24dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
